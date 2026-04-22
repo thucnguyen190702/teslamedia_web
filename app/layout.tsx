@@ -71,25 +71,16 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Tesla Media" />
         
-        {/* Apple Touch Icons */}
-        <link rel="apple-touch-icon" href="/icons/icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png" />
-        <link rel="apple-touch-icon" sizes="128x128" href="/icons/icon-128x128.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png" />
-        <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png" />
-        <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png" />
+        {/* Apple Touch Icons - Using Tesla logo temporarily */}
+        <link rel="apple-touch-icon" href="/images/icons/Logo-tesla.png" />
         
-        {/* Favicon */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        {/* Favicon - Using Tesla logo temporarily */}
+        <link rel="icon" type="image/png" href="/images/icons/Logo-tesla.png" />
+        <link rel="shortcut icon" href="/images/icons/Logo-tesla.png" />
         
-        {/* Microsoft Tiles */}
+        {/* Microsoft Tiles - Using Tesla logo temporarily */}
         <meta name="msapplication-TileColor" content="#1877F2" />
-        <meta name="msapplication-TileImage" content="/icons/icon-144x144.png" />
+        <meta name="msapplication-TileImage" content="/images/icons/Logo-tesla.png" />
         
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
