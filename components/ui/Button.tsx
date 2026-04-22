@@ -3,11 +3,25 @@
 import { motion } from 'framer-motion';
 import { forwardRef } from 'react';
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'outline';
   size?: 'sm' | 'md' | 'lg';
   loading?: boolean;
   children: React.ReactNode;
+  className?: string;
+  disabled?: boolean;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  type?: 'button' | 'submit' | 'reset';
+  form?: string;
+  id?: string;
+  name?: string;
+  value?: string;
+  'aria-label'?: string;
+  'aria-describedby'?: string;
+  'aria-expanded'?: boolean | 'true' | 'false';
+  'aria-controls'?: string;
+  tabIndex?: number;
+  title?: string;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(

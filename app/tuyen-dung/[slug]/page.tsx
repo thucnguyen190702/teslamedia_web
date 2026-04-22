@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import { StructuredData, generateJobPostingStructuredData, generateMetadata as generateSEOMetadata } from '@/components/shared/SEO';
 import { jobs } from '@/data/jobs';
@@ -116,10 +115,7 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
         {/* Job Header */}
         <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+            <div
               className="max-w-4xl mx-auto"
             >
               <div className="flex flex-wrap items-center gap-3 mb-4">
@@ -160,7 +156,7 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
                 </svg>
                 Ứng tuyển ngay
               </a>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -170,11 +166,7 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
             <div className="grid lg:grid-cols-3 gap-12">
               {/* Main Content */}
               <div className="lg:col-span-2">
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                  viewport={{ once: true }}
+                <div
                   className="space-y-8"
                 >
                   {/* Job Description */}
@@ -221,16 +213,12 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
                       ))}
                     </ul>
                   </div>
-                </motion.div>
+                </div>
               </div>
 
               {/* Sidebar */}
               <div className="lg:col-span-1">
-                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6 }}
-                  viewport={{ once: true }}
+                <div
                   className="space-y-6"
                 >
                   {/* Apply Card */}
@@ -304,7 +292,7 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
                       </a>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               </div>
             </div>
           </div>
@@ -313,11 +301,7 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
         {/* Other Jobs */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+            <div
               className="text-center mb-12"
             >
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -326,19 +310,15 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
               <p className="text-lg text-gray-600">
                 Khám phá thêm các cơ hội nghề nghiệp tại Tesla Media
               </p>
-            </motion.div>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6">
               {jobs
                 .filter(otherJob => otherJob.id !== job.id)
                 .slice(0, 4)
-                .map((otherJob, index) => (
-                  <motion.div
+                .map((otherJob) => (
+                  <div
                     key={otherJob.id}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    viewport={{ once: true }}
                     className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-6"
                   >
                     <div className="flex items-center justify-between mb-3">
@@ -367,7 +347,7 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
                     >
                       Xem chi tiết →
                     </Link>
-                  </motion.div>
+                  </div>
                 ))}
             </div>
 

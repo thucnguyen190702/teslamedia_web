@@ -3,19 +3,6 @@
 
 import { lazy, Suspense, ReactNode } from 'react';
 
-// Lazy load Framer Motion components
-const LazyFramerMotion = lazy(() => 
-  import('framer-motion').then(module => ({
-    default: {
-      motion: module.motion,
-      AnimatePresence: module.AnimatePresence,
-      LazyMotion: module.LazyMotion,
-      domAnimation: module.domAnimation,
-      domMax: module.domMax
-    }
-  }))
-);
-
 interface LazyMotionWrapperProps {
   children: ReactNode;
   features?: any;
@@ -27,6 +14,19 @@ const StaticFallback = ({ children }: { children: ReactNode }) => (
   <div>{children}</div>
 );
 
+// Lazy load the actual Framer Motion wrapper
+const LazyFramerMotion = lazy(async () => {
+  const { LazyMotion, domAnimation } = await import('framer-motion');
+  
+  const Component = ({ children, features, strict = false }: LazyMotionWrapperProps) => (
+    <LazyMotion features={features || domAnimation} strict={strict}>
+      {children}
+    </LazyMotion>
+  );
+  
+  return { default: Component };
+});
+
 // Wrapper component for lazy-loaded Framer Motion
 export default function LazyMotionWrapper({ 
   children, 
@@ -35,32 +35,25 @@ export default function LazyMotionWrapper({
 }: LazyMotionWrapperProps) {
   return (
     <Suspense fallback={<StaticFallback>{children}</StaticFallback>}>
-      <LazyFramerMotion>
-        {({ LazyMotion, domAnimation }) => (
-          <LazyMotion features={features || domAnimation} strict={strict}>
-            {children}
-          </LazyMotion>
-        )}
+      <LazyFramerMotion features={features} strict={strict}>
+        {children}
       </LazyFramerMotion>
     </Suspense>
   );
 }
 
 // Export lazy-loaded motion components
-export const LazyMotionDiv = lazy(() => 
-  import('framer-motion').then(module => ({
-    default: module.motion.div
-  }))
-);
+export const LazyMotionDiv = lazy(async () => {
+  const { motion } = await import('framer-motion');
+  return { default: motion.div as any };
+});
 
-export const LazyMotionSection = lazy(() => 
-  import('framer-motion').then(module => ({
-    default: module.motion.section
-  }))
-);
+export const LazyMotionSection = lazy(async () => {
+  const { motion } = await import('framer-motion');
+  return { default: motion.section as any };
+});
 
-export const LazyAnimatePresence = lazy(() => 
-  import('framer-motion').then(module => ({
-    default: module.AnimatePresence
-  }))
-);
+export const LazyAnimatePresence = lazy(async () => {
+  const { AnimatePresence } = await import('framer-motion');
+  return { default: AnimatePresence as any };
+});

@@ -46,13 +46,16 @@ export function generateMetadata({
 }: SEOProps): Metadata {
   const fullTitle = title.includes('Tesla Media') ? title : `${title} | Tesla Media`
   
+  // Map 'service' to 'website' for OpenGraph compatibility
+  const validOgType = ogType === 'service' ? 'website' : ogType;
+  
   return {
     title: fullTitle,
     description,
     keywords,
     robots: noIndex ? 'noindex, nofollow' : 'index, follow',
     openGraph: {
-      type: ogType,
+      type: validOgType,
       locale: 'vi_VN',
       url: canonicalUrl,
       siteName: 'Tesla Media',

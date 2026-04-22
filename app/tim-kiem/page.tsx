@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { performSearch, buildSearchIndex, generateHighlights, generateSearchSuggestions, type SearchResult } from '@/lib/search';
@@ -12,7 +12,26 @@ import SearchBar from '@/components/shared/SearchBar';
 
 const RESULTS_PER_PAGE = 10;
 
+function SearchLoading() {
+  return (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="text-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
+        <p className="text-gray-500">Đang tải...</p>
+      </div>
+    </div>
+  );
+}
+
 export default function SearchPage() {
+  return (
+    <Suspense fallback={<SearchLoading />}>
+      <SearchContent />
+    </Suspense>
+  );
+}
+
+function SearchContent() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
   
