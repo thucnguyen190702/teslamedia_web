@@ -42,12 +42,16 @@ export const contactFormSchema = z.object({
     .min(1, 'Vui lòng chọn dịch vụ quan tâm')
     .refine(
       (value) => [
-        'thiet-ke-website',
-        'nhan-dien-thuong-hieu', 
-        'quan-tri-noi-dung',
-        'landing-page',
-        'seo-tong-the',
-        'phong-marketing-thue-ngoai',
+        'tich-xanh-fanpage-ca-nhan',
+        'chay-quang-cao-messenger-livestream',
+        'cham-soc-page',
+        'tang-follow-mat-live',
+        'ngan-sach-chiet-khau',
+        'khoa-hoc-chay-ads',
+        'ho-tro-ban-hang-chot-don',
+        'thiet-ke-landing-page-seo',
+        'cung-cap-nguyen-lieu-facebook',
+        'cho-thue-tai-khoan-quang-cao',
         'khac'
       ].includes(value),
       'Dịch vụ được chọn không hợp lệ'

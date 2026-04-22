@@ -117,6 +117,16 @@ export default function AboutSection({
 
           {/* Video */}
           <motion.div variants={itemVariants} className="relative">
+            {/* Mobile: Show text above video instead of overlay */}
+            <div className="md:hidden mb-4 text-center">
+              <h4 className="font-semibold text-gray-900 mb-1 text-lg">
+                Tesla Media - Hỗ trợ doanh nghiệp mùa Chạy Quảng Cáo ra lợi nhuận
+              </h4>
+              <p className="text-sm text-gray-600">
+                Xem cách chúng tôi đồng hành cùng khách hàng vượt qua khó khăn
+              </p>
+            </div>
+            
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl group cursor-pointer">
               {/* Video Thumbnail */}
               <div
@@ -148,8 +158,8 @@ export default function AboutSection({
                 </motion.div>
               </button>
 
-              {/* Video Title Overlay */}
-              <div className="absolute bottom-4 left-4 right-4">
+              {/* Video Title Overlay - Hidden on mobile to avoid overlapping play button */}
+              <div className="absolute bottom-4 left-4 right-4 hidden md:block">
                 <div className="bg-black bg-opacity-50 rounded-lg p-4 text-white">
                   <h4 className="font-semibold mb-1">
                     Tesla Media - Hỗ trợ doanh nghiệp mùa Chạy Quảng Cáo ra lợi nhuận

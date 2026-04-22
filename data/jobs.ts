@@ -42,7 +42,7 @@ export const jobs: Job[] = [
       'Thời gian làm việc linh hoạt, có thể remote 2 ngày/tuần'
     ],
     deadline: '2024-05-31',
-    applyEmail: 'hr@teslamedia.vn',
+    applyEmail: 'teslamedia@gmail.com',
     metaTitle: 'Tuyển dụng Senior SEO Specialist | Tesla Media',
     metaDescription: 'Tesla Media tuyển dụng Senior SEO Specialist với mức lương hấp dẫn 25-35 triệu. Cơ hội làm việc với các thương hiệu lớn.'
   },
@@ -80,7 +80,7 @@ export const jobs: Job[] = [
       'Team building, workshop định kỳ'
     ],
     deadline: '2024-05-15',
-    applyEmail: 'hr@teslamedia.vn',
+    applyEmail: 'teslamedia@gmail.com',
     metaTitle: 'Tuyển dụng UI/UX Designer | Tesla Media',
     metaDescription: 'Tesla Media tuyển dụng UI/UX Designer với mức lương 15-25 triệu. Môi trường sáng tạo, dự án đa dạng.'
   },
@@ -118,7 +118,7 @@ export const jobs: Job[] = [
       'Thưởng các bài viết viral, có engagement cao'
     ],
     deadline: '2024-06-30',
-    applyEmail: 'hr@teslamedia.vn',
+    applyEmail: 'teslamedia@gmail.com',
     metaTitle: 'Tuyển dụng Content Writer | Tesla Media',
     metaDescription: 'Tesla Media tuyển dụng Content Writer với mức lương 10-15 triệu. Cơ hội phát triển kỹ năng viết và content marketing.'
   },
@@ -196,7 +196,7 @@ export const jobs: Job[] = [
       'Team building, events'
     ],
     deadline: '2024-06-15',
-    applyEmail: 'hr@teslamedia.vn',
+    applyEmail: 'teslamedia@gmail.com',
     metaTitle: 'Tuyển dụng Social Media Specialist | Tesla Media',
     metaDescription: 'Tesla Media tuyển dụng Social Media Specialist với mức lương 12-18 triệu. Làm việc với thương hiệu lớn, campaigns sáng tạo.'
   },
@@ -233,7 +233,7 @@ export const jobs: Job[] = [
       'Flexible working hours (phù hợp với lịch học)'
     ],
     deadline: '2024-07-31',
-    applyEmail: 'hr@teslamedia.vn',
+    applyEmail: 'teslamedia@gmail.com',
     metaTitle: 'Tuyển dụng Digital Marketing Intern | Tesla Media',
     metaDescription: 'Tesla Media tuyển thực tập sinh Digital Marketing. Cơ hội học hỏi thực tế, được đào tạo bài bản từ chuyên gia.'
   }

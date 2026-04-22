@@ -45,8 +45,8 @@ export default function ContactForm({ servicePreselect, onSuccess }: ContactForm
       `${data.message ? `💬 Nội dung: ${data.message}\n` : ''}\n` +
       `Vui lòng liên hệ lại với tôi. Cảm ơn!`;
     
-    // Get Facebook Page ID from messenger URL (extract from m.me/teslamediavn)
-    const messengerUrl = `https://m.me/teslamediavn?text=${encodeURIComponent(message)}`;
+    // Get Facebook Page ID from messenger URL (extract from m.me/teslamediahp1)
+    const messengerUrl = `https://m.me/teslamediahp1?text=${encodeURIComponent(message)}`;
     
     // Open Messenger in new tab
     window.open(messengerUrl, '_blank');

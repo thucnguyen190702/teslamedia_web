@@ -308,7 +308,7 @@ export default function CareersPage() {
                   Chúng tôi sẽ cập nhật các vị trí mới sớm nhất. Hãy theo dõi thường xuyên!
                 </p>
                 <a
-                  href="mailto:hr@teslamedia.vn"
+                  href="mailto:teslamedia@gmail.com"
                   className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
                 >
                   Gửi CV ứng tuyển
@@ -335,7 +335,7 @@ export default function CareersPage() {
                 và sẽ liên hệ khi có cơ hội phù hợp.
               </p>
               <a
-                href="mailto:hr@teslamedia.vn?subject=Ứng tuyển vị trí tại Tesla Media"
+                href="mailto:teslamedia@gmail.com?subject=Ứng tuyển vị trí tại Tesla Media"
                 className="inline-flex items-center bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
