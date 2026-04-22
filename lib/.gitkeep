@@ -1,0 +1,5 @@
+# Lib directory
+This directory will contain utility functions and helpers:
+- utils.ts - General utility functions
+- validation.ts - Zod validation schemas
+- search.ts - Search functionality

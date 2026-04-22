@@ -1,0 +1,12 @@
+# Thư mục lưu trữ hình ảnh cho website
+
+Cấu trúc thư mục:
+- /hero - Ảnh banner, hero section
+- /services - Ảnh dịch vụ
+- /projects - Ảnh dự án
+- /blog - Ảnh blog posts
+- /team - Ảnh đội ngũ
+- /partners - Logo đối tác
+- /testimonials - Ảnh khách hàng
+- /about - Ảnh về công ty
+- /icons - Icon, logo

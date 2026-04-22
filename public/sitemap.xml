@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://teslamedia.vn</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- About page -->
+  <url>
+    <loc>https://teslamedia.vn/ve-chung-toi</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Contact page -->
+  <url>
+    <loc>https://teslamedia.vn/lien-he</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Services main page -->
+  <url>
+    <loc>https://teslamedia.vn/dich-vu</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Individual service pages -->
+  <url>
+    <loc>https://teslamedia.vn/dich-vu/thiet-ke-website</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/dich-vu/nhan-dien-thuong-hieu</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/dich-vu/quan-tri-noi-dung</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/dich-vu/landing-page</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/dich-vu/seo-tong-the</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/dich-vu/phong-marketing-thue-ngoai</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Projects main page -->
+  <url>
+    <loc>https://teslamedia.vn/du-an</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Project detail pages -->
+  <url>
+    <loc>https://teslamedia.vn/du-an/vinamilk-website</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/du-an/fpt-shop</loc>
+    <lastmod>2024-02-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/du-an/viettel-store</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/du-an/highlands-coffee-rebrand</loc>
+    <lastmod>2023-12-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/du-an/vingroup-identity</loc>
+    <lastmod>2023-11-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/du-an/momo-brand</loc>
+    <lastmod>2023-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/du-an/shopee-campaign</loc>
+    <lastmod>2024-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/du-an/lazada-sale</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/du-an/tiki-landing</loc>
+    <lastmod>2024-04-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Blog main page -->
+  <url>
+    <loc>https://teslamedia.vn/blog</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Meta Updates main page -->
+  <url>
+    <loc>https://teslamedia.vn/cap-nhat-meta</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Meta Updates detail pages -->
+  <url>
+    <loc>https://teslamedia.vn/cap-nhat-meta/cap-nhat-meta-q1-2024-thay-doi-chinh-sach-quang-cao</loc>
+    <lastmod>2024-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/cap-nhat-meta/meta-ai-creative-tools-2024-cong-cu-tao-quang-cao</loc>
+    <lastmod>2024-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/cap-nhat-meta/facebook-advantage-plus-2024-tu-dong-hoa-quang-cao</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/cap-nhat-meta/instagram-reels-algorithm-2024-cach-tang-reach</loc>
+    <lastmod>2024-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog post pages -->
+  <url>
+    <loc>https://teslamedia.vn/blog/seo-la-gi-huong-dan-toan-tap-ve-seo-cho-nguoi-moi-bat-dau</loc>
+    <lastmod>2024-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/blog/thiet-ke-website-hieu-qua-10-nguyen-tac-can-biet</loc>
+    <lastmod>2024-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://teslamedia.vn/blog/cach-nghien-cuu-tu-khoa-hieu-qua-cho-seo</loc>
+    <lastmod>2024-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Careers main page -->
+  <url>
+    <loc>https://teslamedia.vn/tuyen-dung</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Support page -->
+  <url>
+    <loc>https://teslamedia.vn/ho-tro-khach-hang</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Search page -->
+  <url>
+    <loc>https://teslamedia.vn/tim-kiem</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

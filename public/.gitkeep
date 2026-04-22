@@ -1,0 +1,7 @@
+# Public directory
+This directory will contain static assets:
+- images/ - Image assets
+- profile.pdf - Company profile download
+- sitemap.xml - SEO sitemap
+- robots.txt - Robots file
+- manifest.json - PWA manifest

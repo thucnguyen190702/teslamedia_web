@@ -1,0 +1,9 @@
+# Data directory
+This directory will contain hardcoded static content:
+- services.ts - Service data
+- projects.ts - Project portfolio data
+- blog-posts.ts - Blog post content
+- testimonials.ts - Customer testimonials
+- jobs.ts - Job listings
+- faq.ts - FAQ items
+- company-info.ts - Company information
