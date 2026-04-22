@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
-import { StructuredData, generateJobPostingStructuredData } from '@/components/shared/SEO';
+import { StructuredData, generateJobPostingStructuredData, generateMetadata as generateSEOMetadata } from '@/components/shared/SEO';
 import { jobs } from '@/data/jobs';
 import { formatDate } from '@/lib/utils';
 
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: JobDetailPageProps): Promise<
     };
   }
 
-  return generateMetadata({
+  return generateSEOMetadata({
     title: job.metaTitle,
     description: job.metaDescription,
     keywords: `${job.title}, tuyển dụng ${job.department}, việc làm ${job.location}`,

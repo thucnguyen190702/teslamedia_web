@@ -7,4 +7,5 @@ export { default as SearchBar } from './SearchBar';
 export { default as FilterTabs } from './FilterTabs';
 export { default as Popup } from './Popup';
 export { default as ImageWithFallback } from './ImageWithFallback';
-export { default as SEO, generateMetadata, StructuredData } from './SEO';
+export { default as SkipLink } from './SkipLink';
+export * from './SEO';

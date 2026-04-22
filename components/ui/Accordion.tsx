@@ -150,7 +150,8 @@ export const SingleAccordion: React.FC<SingleAccordionProps> = ({
   defaultOpen = false,
   className = ''
 }) => {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
+  // State is intentionally unused but kept for future expansion
+  useState(defaultOpen);
 
   return (
     <Accordion

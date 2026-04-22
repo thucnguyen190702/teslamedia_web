@@ -5,13 +5,11 @@ import {
   ServicesGrid,
   StatsSection,
   LogoSlider,
-  ProjectGallery,
   Testimonials,
   BlogSection
 } from '@/components/home';
 import { StructuredData, organizationStructuredData, websiteStructuredData } from '@/components/shared/SEO';
 import { services } from '@/data/services';
-import { projects } from '@/data/projects';
 import { blogPosts } from '@/data/blog-posts';
 import { testimonials } from '@/data/testimonials';
 

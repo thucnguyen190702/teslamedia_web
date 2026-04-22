@@ -3,14 +3,12 @@ import { notFound } from 'next/navigation';
 import { services } from '@/data/services';
 import { projects } from '@/data/projects';
 import { blogPosts } from '@/data/blog-posts';
-import { Service } from '@/lib/types';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import ProjectCard from '@/components/shared/ProjectCard';
 import BlogCard from '@/components/shared/BlogCard';
 import ContactForm from '@/components/shared/ContactForm';
-import OptimizedImage from '@/components/shared/OptimizedImage';
 import InternalLinks from '@/components/shared/InternalLinks';
-import { findRelevantLinks, serviceLinks } from '@/lib/internal-links';
+import { findRelevantLinks } from '@/lib/internal-links';
 import {
   FaCheck,
   FaCheckCircle,
@@ -132,7 +130,7 @@ export default function ServicePage({ params }: ServicePageProps) {
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: service.title,
-      itemListElement: service.benefits.map((benefit, index) => ({
+      itemListElement: service.benefits.map((benefit) => ({
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',

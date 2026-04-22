@@ -6,7 +6,7 @@ import { projects } from '@/data/projects';
 import { services } from '@/data/services';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import ProjectCard from '@/components/shared/ProjectCard';
-import { BreadcrumbItem, Project } from '@/lib/types';
+import { BreadcrumbItem } from '@/lib/types';
 import {
   FaCheckCircle,
   FaFacebookMessenger,

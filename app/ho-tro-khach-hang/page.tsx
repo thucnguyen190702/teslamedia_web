@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { Metadata } from 'next';
 import { motion } from 'framer-motion';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import Accordion from '@/components/ui/Accordion';

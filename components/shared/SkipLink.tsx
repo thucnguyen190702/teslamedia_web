@@ -28,7 +28,7 @@ export default function SkipLink({
         min-h-touch min-w-touch flex items-center justify-center
         ${className}
       `}
-      onClick={(e) => {
+      onClick={() => {
         // Ensure the target element receives focus
         const target = document.getElementById(targetId);
         if (target) {

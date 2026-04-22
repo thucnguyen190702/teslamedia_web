@@ -86,7 +86,7 @@ export function validatePageSEO(data: PageSEOData): SEOValidationResult {
     let previousLevel = 1;
     let hasH1 = false;
     
-    headings.forEach((heading, index) => {
+    headings.forEach((heading) => {
       if (heading.level === 1) {
         if (hasH1) {
           warnings.push('Có nhiều hơn 1 H1 tag trên trang');
@@ -189,14 +189,14 @@ export function validateWebsiteSEO(pages: { url: string; data: PageSEOData }[]):
   
   // Check for duplicate titles
   const titles = pages.map(p => p.data.title);
-  const duplicateTitles = titles.filter((title, index) => titles.indexOf(title) !== index);
-  if (duplicateTitles.length > 0) {
+  const uniqueTitles = new Set(titles);
+  if (uniqueTitles.size < titles.length) {
     globalIssues.push('Có title tags trùng lặp');
   }
   
   // Check for duplicate descriptions
   const descriptions = pages.map(p => p.data.description);
-  const duplicateDescriptions = descriptions.filter((desc, index) => descriptions.indexOf(desc) !== index);
+  const duplicateDescriptions = descriptions.filter((desc) => descriptions.indexOf(desc) !== descriptions.lastIndexOf(desc));
   if (duplicateDescriptions.length > 0) {
     globalIssues.push('Có meta descriptions trùng lặp');
   }

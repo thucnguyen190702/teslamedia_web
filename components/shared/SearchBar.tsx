@@ -241,7 +241,7 @@ export default function SearchBar({
               </div>
             ) : results.length > 0 ? (
               <div className="py-2">
-                {results.map((result, index) => (
+                {results.map((result) => (
                   <button
                     key={`${result.type}-${result.id}`}
                     onClick={() => handleResultClick(result)}

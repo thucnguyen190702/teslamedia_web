@@ -24,7 +24,6 @@ export default function Popup({
   cookieDays = 7
 }: PopupProps) {
   const [isVisible, setIsVisible] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     // Check if popup was already shown
@@ -33,7 +32,6 @@ export default function Popup({
       return;
     }
 
-    let timeoutId: NodeJS.Timeout;
     let scrollTriggered = false;
 
     // Handle scroll trigger (50% of page)
@@ -44,14 +42,13 @@ export default function Popup({
       
       if (scrollPercent >= 50) {
         scrollTriggered = true;
-        setHasScrolled(true);
         setIsVisible(true);
         window.removeEventListener('scroll', handleScroll);
       }
     };
 
     // Set up time-based trigger
-    timeoutId = setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       if (!scrollTriggered) {
         setIsVisible(true);
       }

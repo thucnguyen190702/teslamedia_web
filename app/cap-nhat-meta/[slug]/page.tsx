@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import metaUpdates from '@/data/meta-updates';
 import ImageWithFallback from '@/components/shared/ImageWithFallback';
-import { FaCalendar, FaClock, FaArrowLeft, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaCalendar, FaClock, FaArrowLeft, FaFacebook } from 'react-icons/fa';
 
 interface MetaUpdatePageProps {
   params: {
