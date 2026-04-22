@@ -255,11 +255,11 @@ const Header: React.FC<HeaderProps> = ({ transparent = false }) => {
                 </div>
 
                 {/* Navigation */}
-                <nav className="overflow-y-auto flex flex-col bg-gray-50" role="navigation" aria-label="Menu chính">
+                <nav className="overflow-y-auto flex-1 flex flex-col bg-gray-50" role="navigation" aria-label="Menu chính">
                   {navigationItems.map((item) => (
                     <React.Fragment key={item.href}>
                       {item.hasDropdown ? (
-                        <>
+                        <div className="services-dropdown-container w-full">
                           <button
                             onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
                             className={`w-full flex items-center justify-between px-5 py-4 text-left text-sm font-medium transition-colors duration-200 border-b border-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 ${isActiveLink(item.href)
@@ -295,21 +295,23 @@ const Header: React.FC<HeaderProps> = ({ transparent = false }) => {
                                 role="menu"
                                 aria-label="Dịch vụ"
                               >
-                                {item.dropdownItems?.map((dropdownItem, index) => (
-                                  <Link
-                                    key={dropdownItem.href}
-                                    href={dropdownItem.href}
-                                    prefetch={true}
-                                    role="menuitem"
-                                    className={`block w-full px-5 pl-12 py-3 text-left text-sm text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors duration-200 focus:outline-none focus:bg-primary-50 focus:text-primary-500 ${index < item.dropdownItems!.length - 1 ? 'border-b border-gray-200' : 'border-b border-gray-200'}`}
-                                  >
-                                    {dropdownItem.label}
-                                  </Link>
-                                ))}
+                                <div className="max-h-[35vh] overflow-y-auto">
+                                  {item.dropdownItems?.map((dropdownItem, index) => (
+                                    <Link
+                                      key={dropdownItem.href}
+                                      href={dropdownItem.href}
+                                      prefetch={true}
+                                      role="menuitem"
+                                      className={`block w-full px-5 pl-12 py-3 text-left text-sm text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors duration-200 focus:outline-none focus:bg-primary-50 focus:text-primary-500 ${index < item.dropdownItems!.length - 1 ? 'border-b border-gray-200' : 'border-b border-gray-200'}`}
+                                    >
+                                      {dropdownItem.label}
+                                    </Link>
+                                  ))}
+                                </div>
                               </motion.div>
                             )}
                           </AnimatePresence>
-                        </>
+                        </div>
                       ) : (
                         <Link
                           href={item.href}
