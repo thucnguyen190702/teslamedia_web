@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes, FaChevronDown, FaSearch, FaHome, FaInfoCircle, FaServicestack, FaNewspaper, FaBell, FaEnvelope } from 'react-icons/fa';
+import { FaBars, FaTimes, FaChevronDown, FaSearch, FaHome, FaServicestack, FaNewspaper, FaBell, FaEnvelope } from 'react-icons/fa';
 import { services } from '@/data/services';
 import SearchBar from '@/components/shared/SearchBar';
 

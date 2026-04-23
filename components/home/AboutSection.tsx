@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import LazyModal from '@/components/ui/LazyModal';
 import LazyVideoPlayer from '@/components/home/LazyVideoPlayer';
-import Link from 'next/link';
 
 interface AboutSectionProps {
   title: string;
