@@ -54,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({ transparent = false }) => {
 
   const navigationItems = [
     { label: 'Trang chủ', href: '/', icon: FaHome },
-    { label: 'Về chúng tôi', href: '/ve-chung-toi', icon: FaInfoCircle },
+    // { label: 'Về chúng tôi', href: '/ve-chung-toi', icon: FaInfoCircle },
     {
       label: 'Dịch vụ',
       href: '/dich-vu',

@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
     {
       title: 'Công ty',
       links: [
-        { label: 'Về chúng tôi', href: '/ve-chung-toi' },
+        // { label: 'Về chúng tôi', href: '/ve-chung-toi' },
         { label: 'Dự án tiêu biểu', href: '/du-an' },
         { label: 'Blog & Tin tức', href: '/blog' },
         { label: 'Tuyển dụng', href: '/tuyen-dung' }

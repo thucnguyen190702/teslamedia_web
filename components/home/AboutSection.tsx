@@ -105,14 +105,14 @@ export default function AboutSection({
               </motion.div>
             )}
 
-            <motion.div variants={itemVariants}>
+            {/* <motion.div variants={itemVariants}>
               <Link
                 href="/ve-chung-toi"
                 className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold inline-flex items-center justify-center transition-colors duration-200"
               >
                 Tìm hiểu thêm về chúng tôi
               </Link>
-            </motion.div>
+            </motion.div> */}
           </div>
 
           {/* Video */}
