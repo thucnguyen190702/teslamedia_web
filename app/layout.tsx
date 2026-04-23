@@ -147,7 +147,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <StickyContactBar />
+        {/* <StickyContactBar /> */}
         <LazyPopup
           title="🎯 Xác minh tích xanh Facebook cho Fanpage"
           content="Tăng độ tin cậy và uy tín thương hiệu với dịch vụ xác minh tích xanh Facebook chuyên nghiệp. Bảo vệ khỏi tài khoản giả mạo và tăng reach tự nhiên."
